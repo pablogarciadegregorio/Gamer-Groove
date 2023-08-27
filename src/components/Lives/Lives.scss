@@ -1,0 +1,54 @@
+.livesContainer{
+    margin: 30px 0px;
+}
+
+
+
+.heart{
+
+    height:60px;
+    width: 60px;
+    margin-right:3px;  
+    animation: gelatine 8s infinite;
+
+    
+}
+
+.heart:hover{
+    
+     animation: shrink 1s 1;
+}
+
+.heartDown{
+
+    height:60px;
+    width: 60px;
+    animation: tilt-n-move-shaking 0.05s 4;
+}
+
+
+
+
+
+
+@keyframes tilt-n-move-shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(5px, 5px) rotate(5deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-5px, 5px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
+
+  @keyframes gelatine {
+    from, to { transform: scale(1, 1); }
+    25% { transform: scale(0.9, 1.1); }
+    50% { transform: scale(1.1, 0.9); }
+    75% { transform: scale(0.95, 1.05); }
+  }
+
+  @keyframes shrink {
+    0%  {transform: scale(1,1)}
+    20% {transform: scale(0.8,0.8)}
+    100% {transform: scale(1,1)}
+
+  }

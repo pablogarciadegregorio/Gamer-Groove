@@ -1,0 +1,187 @@
+.results{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.results {
+    color:black;
+}
+
+
+.score{
+    font-size: 30px;
+    margin-bottom:15px;
+}
+
+
+
+.correct{
+    color:green !important;
+}
+.wrong{
+    color:red !important;
+}
+
+
+.tryAgain{
+    margin: 50px 30px;
+}
+
+.buttonSelector{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.songBox{
+   
+    display:flex;
+    flex-direction: column; 
+}
+
+
+.songDataContainer{
+    margin:20px 0;
+}
+
+.songDataContainer:hover .title {
+    display:none;
+}
+.songDataContainer:hover .vg {
+    display:none;
+}
+
+.songDataContainer:hover .songNumber {
+    display:none;
+}
+
+.songDataContainer:hover .arranger {
+    display:block;
+}
+.songDataContainer:hover .composer {
+    display:block;
+}
+
+.songDataContainer:hover .selector {
+    display:block;
+}
+
+.arranger, .composer, .selector{
+    display:none;
+}
+
+.composer{
+    color:#ff0050
+}
+.arranger{
+    color:#4a4cee
+}
+
+.data{
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    align-items: flex-start;
+    height:100px;
+}
+.number-container{
+    justify-content: center;
+    align-items: center;
+}
+
+.selector{
+    font-size:50px;
+    text-align: center;
+    
+}
+
+.title , .composer{
+    font-size: 20px;
+    text-justify:inter-character;
+
+}
+.vg , .arranger{
+    font-size:18px;
+}
+
+
+.textLine{
+    margin-top:12px;
+}
+
+.divider{
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 4px solid;
+    opacity: 1;
+}
+
+.songNumber{
+    font-size:30px;
+    margin-top: 0;
+    padding-top: 23px;
+    margin-bottom:30px;
+}
+
+.buttonBack{
+    margin: 50px auto 30px auto;
+}
+
+.pixel-shadow1{ //mirar el zindex para que no desaparezca con la barra
+    width: 12px;
+    height:12px;
+    background-color:#929292;
+
+    position:absolute;
+    top:0;
+    left:0;
+    
+   
+   } 
+
+   .pixel-shadow02{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    top:0;
+    right:0;
+    
+    
+   } 
+   .pixel-shadow03{
+    width: 12px;
+    height:12px;
+    background-color: #545454;
+    position:absolute;
+    bottom:0;
+    left:0;
+   } 
+
+   .pixel-shadow04{
+    width: 12px;
+    height:12px;
+    background-color: #545454;
+    position:absolute;
+    bottom:0;
+    right:0;
+   }      
+   .pixel-shadow05{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    bottom:12px;
+    left:0;
+   } 
+
+   .pixel-shadow06{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    bottom:12px;
+    right:0;
+   }         

@@ -1,0 +1,160 @@
+.gameOver {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.gameOverText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    margin: 20px 0px;
+
+}
+
+.goText {
+    width:325px;
+    height: 208px;
+    // color:#fbfbfb;
+    // margin-top:0;   
+    // text-shadow:
+    // 0px -2px 0px #000000,
+    //     0px -2px 0px #000000,
+    //     0px 2px 0px #000000,
+    //     -2px 0px 0px #000000,
+    //     2px 0px 0px #000000,
+    //     2px 2px 0px #000000,
+    //     4px 4px 0px #000000,
+    //     6px 6px 0px #000000,
+        
+    //     0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+.continue {
+    margin-top: 35px;
+    font-size: 25px;
+    color:black;
+
+}
+
+.counter {
+    margin-top: 35px;
+    font-size: 30px;
+    color:black;
+    animation: countdown 1s infinite
+
+}
+
+.yes-no{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    margin-top:25px;
+    
+}
+.yes-no p{
+    color:black;
+    font-size:30px;
+    margin:auto;
+
+    &:hover{
+        animation: yes-no 0.3s infinite;
+       color:orange;
+       text-shadow: 4px 0 #000, -4px 0 #000, 0 4px #000f, 0 -4px #000,
+             2px 2px #000, -2px -2px #000, 2px -2px #000, -2px 2px #000;
+       cursor:url('src/img/cursor02pointer.png'), pointer;
+    }
+
+}
+
+.gamerEnough1 {
+    margin: 100px 0 0 0;
+    font-size: 19px;
+    margin-bottom: 0px;
+    color:black;
+}
+
+.gamerEnough2 {
+    font-size: 19px;
+    color:black;
+}
+
+.tryAgainGO {
+    margin: 20px auto 50px auto;
+}
+
+.pixel-shadow01 {
+    //mirar el zindex para que no desaparezca con la barra
+    width: 12px;
+    height: 12px;
+    background-color: #929292;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+}
+
+.pixel-shadow02 {
+    width: 12px;
+    height: 12px;
+    background-color: #929292;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+
+}
+
+.pixel-shadow03 {
+    width: 12px;
+    height: 12px;
+    background-color: #545454;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.pixel-shadow04 {
+    width: 12px;
+    height: 12px;
+    background-color: #545454;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pixel-shadow05 {
+    width: 12px;
+    height: 12px;
+    background-color: #929292;
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+}
+
+.pixel-shadow06 {
+    width: 12px;
+    height: 12px;
+    background-color: #929292;
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+}
+
+
+
+
+@keyframes yes-no {
+    0%  {transform: scale(1.5,1.5)}
+    20% {transform: scale(1,1)}
+    80% {transform: scale(1,1)} 
+    100% {transform: scale(1.5,1.5)} 
+    
+}

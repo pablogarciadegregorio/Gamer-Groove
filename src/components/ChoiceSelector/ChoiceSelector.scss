@@ -1,0 +1,65 @@
+.question-tracker{
+  display:flex;
+  align-items: center;
+}
+
+  h2{
+    color:black;
+  }
+  
+  .pixel-shadow1{ //mirar el zindex para que no desaparezca con la barra
+    width: 12px;
+    height:12px;
+    background-color:#929292;
+
+    position:absolute;
+    top:30px;
+    left:0;
+    
+   
+   } 
+
+   .pixel-shadow2{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    top:30px;
+    right:0;
+    
+    
+   } 
+   .pixel-shadow3{
+    width: 12px;
+    height:12px;
+    background-color: #545454;
+    position:absolute;
+    bottom:0;
+    left:0;
+   } 
+
+   .pixel-shadow4{
+    width: 12px;
+    height:12px;
+    background-color: #545454;
+    position:absolute;
+    bottom:0;
+    right:0;
+   }      
+   .pixel-shadow5{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    bottom:12px;
+    left:0;
+   } 
+
+   .pixel-shadow6{
+    width: 12px;
+    height:12px;
+    background-color: #929292;
+    position:absolute;
+    bottom:12px;
+    right:0;
+   }         

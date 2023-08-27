@@ -1,0 +1,101 @@
+@import "../../styles/index.scss";
+
+
+
+.quiz-container {
+    display:flex;
+    flex-direction:column;
+    overflow-x:hidden;
+    overflow-y:hidden;
+    width: 500px;
+    height:fit-content;
+    background-color: $bg;
+    border-radius: 0px;
+    margin-top: 100px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+    position:relative;
+    text-align:center;
+    box-shadow:   -10px 0 0 0 black,
+                 10px 0 0 0 black,
+                 0 -10px 0 0 black,
+                 0 10px 0 0 black,
+                 0 0 0 0 #545454,
+                 0 20px 0 0 #545454,
+                 0 -12px 0 0 #929292 inset,
+                 0 0 0 0 #545454;
+                 
+                 
+         
+
+
+
+
+    .active-question-number {
+        font-size: 32px;
+        font-weight: 500;
+        color: $primary;
+    }
+
+    .total-question {
+        font-size: 16px;
+        font-weight: 500;
+        color: $disabled;
+    }
+
+    .selected-answer {
+        
+        pointer-events: none;
+
+    }
+
+    .selected-correct-answer{
+        background-color: rgb(28, 163, 28);
+        box-shadow: 
+        -3px 0 0 0 black, 
+        3px 0 0 0 black, 
+        0 -3px 0 0 black, 
+        0 3px 0 0 black,     
+        0 4px 0 0 #545454,
+         
+        0 4px 0 0 #545454, 
+        0 -6px 0 0 rgb(52, 228, 52) inset;
+                    
+        color: $bg;
+        pointer-events: none;
+       
+    }
+
+    .selected-wrong-answer{
+        background-color: red;
+        box-shadow: 
+        -3px 0 0 0 black, 
+        3px 0 0 0 black, 
+        0 -3px 0 0 black, 
+        0 3px 0 0 black,     
+        0 4px 0 0 #545454,
+        0 0 0 0 #545454, 
+        0 4px 0 0 #545454, 
+        0 -6px 0 0 rgb(245, 87, 87) inset;
+        border: 1px solid rgb(248, 94, 94);
+        color: $bg;
+        pointer-events:none;
+       
+    }
+
+    input {
+        border: 1px solid $disabled;
+        border-radius: 4px;
+        padding: 10px 20px; 
+        width: 100%;
+        margin-top:20px;
+        box-sizing: border-box;
+
+    }
+
+}
+
+.game{
+    transition-delay: 0.8s;
+}
+

@@ -1,0 +1,134 @@
+.pressEnterKey{
+    height:20px;
+    width:20px;
+    position:absolute;
+    right:10px;
+    bottom: 15px;
+
+}
+
+.guess{
+    color:#ffc832;
+    text-shadow:
+    0px -2px 0px #000000,
+        0px -2px 0px #000000,
+        0px 2px 0px #000000,
+        -2px 0px 0px #000000,
+        2px 0px 0px #000000,
+        2px 2px 0px #000000,
+        4px 4px 0px #000000,
+        6px 6px 0px #000000,
+        
+        
+        0px 6px 1px rgba(0, 0, 0, 0.1);
+}
+
+
+.introContainer{
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    text-align: center;
+}
+
+.introContainer p{
+  color:black;
+}
+
+
+.speechBubble{
+    display:flex;
+    flex-direction: column;
+    background-color: white;
+    width:fit-content;
+    margin:auto;
+    box-shadow:   10px 0 0 0 black,
+                  -10px 0 0 0 black,
+                  0 10px 0 0 black,
+                  0 -10px 0 0 black;
+                                 
+}
+
+.buttonsIntro{
+    display:inline-flex;
+    flex-direction: row;
+}
+
+.infoButton{
+    background-color: rgb(255, 200, 50);
+    box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px -6px 0 0 rgb(201, 144, 38) inset, 0 0 0 0 #545454;
+    &:active{
+      background-color: rgb(236, 198, 128) ;
+      box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px 6px 0 0 rgb(201, 144, 38) inset, 0 0 0 0 #545454;
+    }
+    &:hover{
+      background-color: rgb(228, 179, 45) 
+    }
+}
+.startButton{
+    display:flex;
+    text-align:center;
+    margin:auto;
+    position: absolute;
+    right: 0;
+}
+
+
+
+
+.glyph{
+    display:flex;
+    flex-direction: column;
+    margin:0 0 12px auto;
+    padding: 0 8px 0  0;
+    animation: pressButton 1s  infinite step-end; 
+        
+}
+ 
+.typewriter1{
+    position: relative;
+    // top: 50%;  
+    // width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    // font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+}
+.typewriterAnimation{
+    animation: typewriter 4s steps(44) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;
+  }
+  @keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+  }
+  @keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+  }
+
+
+
+@keyframes  pressButton {
+    0%  {opacity: (1)}
+    25% {opacity: (0)}
+    50% {opacity: (1)}
+    75% {opacity: (0)}
+    100%  {opacity: (1)}
+  }
+
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }

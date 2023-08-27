@@ -1,0 +1,144 @@
+@import "./variables.scss";
+    
+
+
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    // background:linear-gradient(0deg,#8d1091, 50%, 
+    // #69106c, 60% #430046, 80% #2b002e, 90% #0e0018 );
+    background: linear-gradient( to top,
+        #070a35 50%,       
+        #ef019f 100%
+    );
+    
+
+    color: $foreground;
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 100px auto;
+    padding: 0 30px;
+    height: 100vh;
+    // overflow-y: hidden; // hide scrollbar
+    cursor: url('src/img/cursor01.png'), default;
+    // cursor: url('src/img/cursor02pointer.png'), pointer;
+    // cursor: url('src/img/forbidden-icon '), not-allowed;
+}
+
+div{
+    display:flex;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -40px;
+    list-style-type: none;
+}
+
+li {
+    box-shadow:
+        -3px 0 0 0 black, 
+        3px 0 0 0 black, 
+        0 -3px 0 0 black, 
+        0 3px 0 0 black,     
+        0 4px 0 0 #545454,
+        0 -4px 0 0 #929292 inset,
+        0 0 0 0 #545454;
+    text-align: center;
+    text-decoration: none;
+    color: $foreground;
+    background-color: $bg;
+    font-size: 16px;
+    
+    padding: 11px;
+    margin-top: 15px;
+    cursor: url('src/img/cursor02pointer.png'), pointer;
+}
+
+li:hover {
+    background-color: rgb(224, 224, 224);
+    color: #000000;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 0;
+}
+
+button {
+    font-size: 18px;
+    font-family: 'Press Start 2P', cursive;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin: 0;
+    width: fit-content;
+    box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px -6px 0 0 #929292 inset, 0 0 0 0 #545454;
+    
+
+    &:hover {
+        cursor: url('src/img/cursor02pointer.png'), pointer;
+        background-color: rgb(224, 224, 224);
+
+    }   
+
+    &:active {
+        cursor: url('src/img/cursor02pointer.png'), pointer;
+        background-color: #b9b9b9;
+        box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px 6px 0 0 #545454 inset, 0 0 0 0 #545454;
+
+    }
+
+    &:disabled {
+        background: #d4d4d4;
+        color: #8d8a8a;
+        box-shadow: -5px 0 0 0 #545454, 5px 0 0 0 #545454, 0 -5px 0 0 #545454, 0 5px 0 0 #545454, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px -6px 0 0 #929292 inset, 0 0 0 0 #545454;
+
+        cursor: url('src/img/forbidden-icon.png'), not-allowed;
+    }
+
+    
+
+}
+
+.results {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    
+
+    h3 {
+        font-size: 40px;
+        letter-spacing: 1.4px;
+    }
+
+    p {
+        font-size: 14px;
+        font-weight: 500px;
+
+        span {
+            color: $primary;
+            font-size: 14px;
+        }
+    }
+}
+
+
+
+// ANIMATION BACKGROUND
+
+
+  
+ 
+  
