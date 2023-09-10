@@ -4,6 +4,19 @@ import { useState, useEffect, useRef } from "react";
 import Quiz from "../Quiz/Quiz";
 import { Howl, Howler } from 'howler';
 import "./Welcome.scss";
+import "../../img/wELCOME/00.gif"
+import "../../img/wELCOME/01.gif"
+import "../../img/wELCOME/02.gif"
+import "../../img/wELCOME/03.gif"
+import "../../img/wELCOME/04.gif"
+import "../../img/wELCOME/05.gif"
+import "../../img/wELCOME/06.gif"
+import "../../img/wELCOME/07.gif"
+import "../../img/wELCOME/08.gif"
+
+
+
+
 
 
 const Welcome = props => {
