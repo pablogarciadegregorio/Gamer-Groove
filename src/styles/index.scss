@@ -23,7 +23,7 @@ body {
     padding: 0 30px;
     height: 100vh;
     // overflow-y: hidden; // hide scrollbar
-    cursor: url('src/img/cursor01.png'), default;
+    cursor: url('/static/img/cursor01.png'), default;
     // cursor: url('src/img/cursor02pointer.png'), pointer;
     // cursor: url('src/img/forbidden-icon '), not-allowed;
 }
@@ -63,7 +63,7 @@ li {
     
     padding: 11px;
     margin-top: 15px;
-    cursor: url('src/img/cursor02pointer.png'), pointer;
+    cursor: url('/static/img/cursor02pointer.png'), pointer;
 }
 
 li:hover {
@@ -90,13 +90,13 @@ button {
     
 
     &:hover {
-        cursor: url('src/img/cursor02pointer.png'), pointer;
+        cursor: url('/static/img/cursor02pointer.png'), pointer;
         background-color: rgb(224, 224, 224);
 
     }   
 
     &:active {
-        cursor: url('src/img/cursor02pointer.png'), pointer;
+        cursor: url('/static/img/cursor02pointer.png'), pointer;
         background-color: #b9b9b9;
         box-shadow: -5px 0 0 0 black, 5px 0 0 0 black, 0 -5px 0 0 black, 0 5px 0 0 black, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px 6px 0 0 #545454 inset, 0 0 0 0 #545454;
 
@@ -107,7 +107,7 @@ button {
         color: #8d8a8a;
         box-shadow: -5px 0 0 0 #545454, 5px 0 0 0 #545454, 0 -5px 0 0 #545454, 0 5px 0 0 #545454, 0 0 0 0 #545454, 0 8px 0 0 #545454, 0px -6px 0 0 #929292 inset, 0 0 0 0 #545454;
 
-        cursor: url('src/img/forbidden-icon.png'), not-allowed;
+        cursor: url('/static/img/forbidden-icon.png'), not-allowed;
     }
 
     

@@ -85,7 +85,7 @@ const GameOver = props => {
                     </div>
                     <Lives wrongAnswers={props.wrongAnswers} />
                     <div className="gameOverText">
-                        <img src="src/img/GameOver-small.png" className="goText"></img>
+                        <img src="/static/img\GameOver-small.png" className="goText"></img>
 
                         {handleContinue()}
                     </div>
