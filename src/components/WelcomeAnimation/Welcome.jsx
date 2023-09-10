@@ -23,7 +23,8 @@ const Welcome = props => {
 
     const [showWelcome, setShowWelcome] = useState(true);
     const [imgCounter, setImgCounter] = useState(0)
-    const [welcomeImg, setWelcomeImg] = useState(["src/img/wELCOME/00.gif","src/img/wELCOME/01.gif","src/img/wELCOME/02.gif","src/img/wELCOME/03.gif", "src/img/wELCOME/04.gif","src/img/wELCOME/05.gif","src/img/wELCOME/06.gif","src/img/wELCOME/07.gif","src/img/wELCOME/08.gif"]);
+    const [welcomeImg, setWelcomeImg] = useState(["/static/img/00.gif","/static/img/01.gif","/static/img/02.gif","/static/img/03.gif",
+     "/static/img/04.gif","/static/img/05.gif","/static/img/06.gif","/static/img/07.gif","/static/img/08.gif"]);
 
     
         
