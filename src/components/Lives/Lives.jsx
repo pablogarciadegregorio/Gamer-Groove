@@ -8,7 +8,7 @@ const  Lives = props => {
 
     const [lives, setLives] = useState(6);
     const totalLives = 6;
-    const [livesArray, setLivesArray] = useState(["src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png"]);
+    const [livesArray, setLivesArray] = useState(["/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png"]);
     const [classArray, setClassArray] = useState(["heart", "heart", "heart", "heart", "heart", "heart"])
 
 
@@ -16,31 +16,31 @@ const  Lives = props => {
     useEffect(() => {
         setLives(totalLives - props.wrongAnswers)
         if (props.wrongAnswers === 0) {
-            setLivesArray(["src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png"])
             setClassArray(["heart", "heart", "heart", "heart", "heart", "heart"])
         }
         if (props.wrongAnswers === 1) {
-            setLivesArray(["src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/empty.png"])
             setClassArray(["heart", "heart", "heart", "heart", "heart", "heartDown"])
         }
         if (props.wrongAnswers === 2) {
-            setLivesArray(["src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/empty.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/empty.png", "/static/img/empty.png"])
             setClassArray(["heart", "heart", "heart", "heart", "heartDown", "heartDown"])
         }
         if (props.wrongAnswers === 3) {
-            setLivesArray(["src/img/full.png", "src/img/full.png", "src/img/full.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/full.png", "/static/img/full.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png"])
             setClassArray(["heart", "heart", "heart", "heartDown", "heartDown", "heartDown"])
         }
         if (props.wrongAnswers === 4) {
-            setLivesArray(["src/img/full.png", "src/img/full.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/full.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png"])
             setClassArray(["heart", "heart", "heartDown", "heartDown", "heartDown", "heartDown"])
         }
         if (props.wrongAnswers === 5) {
-            setLivesArray(["src/img/full.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/full.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png"])
             setClassArray(["heart", "heartDown", "heartDown", "heartDown", "heartDown", "heartDown"])
         }
         if (props.wrongAnswers >= 6) {
-            setLivesArray(["src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png", "src/img/empty.png"])
+            setLivesArray(["/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png", "/static/img/empty.png"])
             setClassArray(["heartDown", "heartDown", "heartDown", "heartDown", "heartDown", "heartDown"])
         }
 
