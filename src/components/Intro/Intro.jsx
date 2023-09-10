@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { useState, useEffect, useRef } from "react";
-import "./Intro.scss";
 import Quiz from "../Quiz/Quiz";
 import { Howl, Howler } from "howler";
 import "./intro.scss";
