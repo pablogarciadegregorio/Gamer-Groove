@@ -61,27 +61,6 @@ const Results = props => {
 
 
 
-        // (
-        //     <>
-
-        //         <h1 className="mt-4">SONG LIST</h1>
-        //         <hr className="divider"></hr>
-
-
-        //         <div className="songBox container mt-4">
-        // <div className="row">
-        //     <div className="col-2 vynil-container">
-        //         <img className=" vynil" src="src/img/Vynil.png"></img>
-        //     </div>
-        //     <div className="col-10 data">
-        //         <h2 className="title">{props.questions[0].name}</h2>
-        //         <p className='vg m-0 text-secondary'>from {props.questions[0].videogame}</p>
-        //     </div>
-        // </div>
-        //         </div>
-
-        //     </>
-        // )
 
 
 

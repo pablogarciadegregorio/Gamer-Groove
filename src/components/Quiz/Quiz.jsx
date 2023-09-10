@@ -1,10 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { Howl, Howler } from 'howler';
-
 import { useState, useEffect } from "react";
 import { resultInitialState } from "../../Questions";
-
 import "./Quiz.scss";
 import Timer from "../TimerBar/timerBar";
 import Lives from "../Lives/Lives";
@@ -13,13 +11,16 @@ import Results from '../Results/Results';
 import ChoiceSelector from '../ChoiceSelector/ChoiceSelector';
 import Intro from '../Intro/Intro';
 import Welcome from '../WelcomeAnimation/Welcome';
-import VolumeBar from '../VolumeBar/Volume';
+import { jsQuizz } from "../../Questions";
+
 
 
 const Quiz = ({ questions }) => {
 
+    
+    const [selectedQuestions, setSelectedQuestions] = useState(questions.slice(0,10));
     const [currentQuestion, setCurrentQuestion] = useState(0);
-    const { question, choices, correctAnswer, type, src, name, videogame } = questions[currentQuestion];      // DESTRUCTURING. Coge los valores de las questions para la pregunta actual
+    const { question, choices, correctAnswer, type, src, name, videogame } = selectedQuestions[currentQuestion];      // DESTRUCTURING. Coge los valores de las questions para la pregunta actual
     const [answerIndex, setAnswerIndex] = useState(null);
     const [answer, setAnswer] = useState(null);
     const [result, setResult] = useState(resultInitialState);                   // Ponemos el estado inicial de result con los datos del objeto resulInitialState de Questions
@@ -36,7 +37,9 @@ const Quiz = ({ questions }) => {
     }));  //we prevent React from refreshing the audio value on each rerender, and thus the reference problem is solved
 
 
-    
+console.log(questions)
+console.log(selectedQuestions)
+        
 
     var sfx = {
         heartDown: new Howl({
@@ -134,7 +137,7 @@ const Quiz = ({ questions }) => {
         setShowTimer(false);
 
 
-        if (currentQuestion !== questions.length - 1) {
+        if (currentQuestion !== selectedQuestions.length - 1) {
             setAnswerIndex(null);             // Si NO es la última pregunta pasa a la siguiente
             setCurrentQuestion(currentQuestion + 1);
         }
@@ -171,8 +174,9 @@ const Quiz = ({ questions }) => {
         result.wrongAnswers = 0;
 
 
-
+        
         questions.sort(() => Math.random() - 0.5);
+        setSelectedQuestions(questions.slice(0,10))
         setSong(() => questions.map(item => {
             return new Audio(item.src)
         }))
@@ -182,6 +186,8 @@ const Quiz = ({ questions }) => {
         })
 
         setShowIntro(true)
+
+
 
     }
 
@@ -342,11 +348,11 @@ const Quiz = ({ questions }) => {
                     :
                     
                     <div className="quiz-container">
-                        <GameOver wrongAnswers={result.wrongAnswers} onTryAgain={onTryAgain} questions={questions} showGameOver={showGameOver} sfx={sfx} song={song} currentQuestion={currentQuestion}/>
-                        <Results onTryAgain={onTryAgain} showResult={showResult} answerIndex={answerIndex} questions={questions} />
+                        <GameOver wrongAnswers={result.wrongAnswers} onTryAgain={onTryAgain} questions={selectedQuestions} showGameOver={showGameOver} sfx={sfx} song={song} currentQuestion={currentQuestion}/>
+                        <Results onTryAgain={onTryAgain} showResult={showResult} answerIndex={answerIndex} questions={selectedQuestions} />
                         <Lives showGameOver={showGameOver} showResult={showResult} showIntro={showIntro} wrongAnswers={result.wrongAnswers} />
                         {showTimer && <Timer duration={parseInt(song[currentQuestion].duration)} onTimeUp={handleTimeUp} calculateScore={calculateScore} answerIndex={answerIndex} showTimer={showTimer} showResult={showResult} showGameOver={showGameOver} />}
-                        <ChoiceSelector showResult={showResult} showGameOver={showGameOver} showIntro={showIntro} currentQuestion={currentQuestion} question={question}  getAnswerUI={getAnswerUI} onClickNext={onClickNext} answerIndex={answerIndex} inputAnswer={inputAnswer} questions={questions} handlePlaySong={handlePlaySong} type={type} />
+                        <ChoiceSelector showResult={showResult} showGameOver={showGameOver} showIntro={showIntro} currentQuestion={currentQuestion} question={question}  getAnswerUI={getAnswerUI} onClickNext={onClickNext} answerIndex={answerIndex} inputAnswer={inputAnswer} questions={selectedQuestions} handlePlaySong={handlePlaySong} type={type} />
                         
                     </div>
                     }
