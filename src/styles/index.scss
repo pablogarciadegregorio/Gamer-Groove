@@ -21,12 +21,14 @@ body {
     justify-content: center;
     margin: 0px 0px 100px auto;
     padding: 0 30px;
-    height: 100vh;
+    min-height: 100vh;
     // overflow-y: hidden; // hide scrollbar
     cursor: url('/static/img/cursor01.png'), default;
     // cursor: url('src/img/cursor02pointer.png'), pointer;
     // cursor: url('src/img/forbidden-icon '), not-allowed;
 }
+
+
 
 div{
     display:flex;
