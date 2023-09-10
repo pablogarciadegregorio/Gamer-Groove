@@ -35,15 +35,6 @@ const Quiz = ({ questions }) => {
         return new Audio(item.src)
     }));  //we prevent React from refreshing the audio value on each rerender, and thus the reference problem is solved
 
-  
-
-
-console.log(song[currentQuestion].duration)
-
-
-
-
-
 
     
 
@@ -70,7 +61,7 @@ console.log(song[currentQuestion].duration)
         }),
 
         sansTalking: new Howl({
-            src: "src/audio/SansTalking.mp3",
+            src: "/static/audio/SansTalking.mp3",
             sprite:{
                 short:[0,550],
                 medium:[550,1500],
