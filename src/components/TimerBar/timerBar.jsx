@@ -33,7 +33,7 @@ const Timer = props => {
     useEffect(() => {
         
         setBarProgress(100 * (counter / props.duration) )                  // Calcula el porcentaje en relacion con la duracion. Duracion está metido como valor en QUIZ <Timer/>
-        if (counter >= props.duration +1) {                                // Le pongo +1 para que no te de por mala si la aciertas en el ultimo milisegundo
+        if (counter >= props.duration + 0.1) {                                // Le pongo +1 para que no te de por mala si la aciertas en el ultimo milisegundo
             clearInterval(intervalRef.current)
             setTimeout(() => {                                      // Le ponemos  un setTimeout de 1s porque la animacion tarda un segundo más en completarse
                 props.onTimeUp();

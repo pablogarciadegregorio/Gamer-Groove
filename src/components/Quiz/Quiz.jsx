@@ -191,7 +191,7 @@ const Quiz = ({ questions }) => {
         clearTimeout();
         setAnswer(false);
         setAnswerIndex(null)                  // pongo in Index de respuesta para que se pare la musica onTimeUP
-        // onClickNext(false);
+        onClickNext(true);
         result.wrongAnswers = result.wrongAnswers + 1
         sfx.heartDown.play();
 
