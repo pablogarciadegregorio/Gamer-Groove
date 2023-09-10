@@ -290,7 +290,7 @@ export const jsQuizz = {
             question: "Most famous melody from Monkey Island",
             choices: ["Chapter Screen", "The Scumm Bar","Intro", "leChuck's Theme"],
             type: "Song",
-            correctAnswer: "Guybrush Threepwood",
+            correctAnswer: "Intro",
             src:"src/audio/songs/24monkey-island-theme.mp3",
             name:"Monkey Island Theme",
             composer:"Michael Land",

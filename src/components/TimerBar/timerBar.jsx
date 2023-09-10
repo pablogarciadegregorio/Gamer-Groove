@@ -44,7 +44,9 @@ const Timer = props => {
 
 
 
-
+console.log(counter)
+console.log(props.duration)
+console.log(barProgress)
 
 
 

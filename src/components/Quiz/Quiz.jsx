@@ -38,7 +38,7 @@ const Quiz = ({ questions }) => {
   
 
 
-
+console.log(song[currentQuestion].duration)
 
 
 
@@ -169,7 +169,7 @@ const Quiz = ({ questions }) => {
 
     // FUNCION QUE GESTIONA REINICIO DEL JUEGO
     const onTryAgain = () => {
-        setShowTimer(false);
+        // setShowTimer(false);
         setShowResult(false);
         setShowGameOver(false);
         setAnswerIndex(null);
@@ -190,6 +190,8 @@ const Quiz = ({ questions }) => {
             setShowTimer(true);                   // y  así se ejecuta después 
         })
 
+        setShowIntro(true)
+
     }
 
 
@@ -197,7 +199,7 @@ const Quiz = ({ questions }) => {
     const handleTimeUp = () => {
         clearTimeout();
         setAnswer(false);
-        setAnswerIndex(50)                  // pongo in Index de respuesta para que se pare la musica onTimeUP
+        setAnswerIndex(null)                  // pongo in Index de respuesta para que se pare la musica onTimeUP
         // onClickNext(false);
         result.wrongAnswers = result.wrongAnswers + 1
         sfx.heartDown.play();
@@ -243,7 +245,7 @@ const Quiz = ({ questions }) => {
             
             song[currentQuestion].pause();
 
-        };
+        }
 
 
     }
