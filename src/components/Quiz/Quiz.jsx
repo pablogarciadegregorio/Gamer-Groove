@@ -40,23 +40,23 @@ const Quiz = ({ questions }) => {
 
     var sfx = {
         heartDown: new Howl({
-            src: "src/audio/8 bit error - Gaming sound effect (HD).mp3"
+            src: "/static/audio/8 bit error - Gaming sound effect (HD).mp3"
         }),
         success: new Howl({
-            src: "src/audio/8 bit Success Coin 01.mp3"
+            src: "/static/audio/8 bit Success Coin 01.mp3"
         }),
 
         countdownTimer: new Howl({
-            src: "src/audio/Counter.mp3"
+            src: "/static/audio/Counter.mp3"
 
         }),
         hoverSong: new Howl({
-            src: "src/audio/8 Bit Coin SFX.mp3"
+            src: "/static/audio/8 Bit Coin SFX.mp3"
 
         }),
 
         resultMusic: new Howl({
-            src: "src/audio/Result.mp3"
+            src: "/static/audio/Result.mp3"
 
         }),
 
