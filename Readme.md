@@ -16,7 +16,20 @@
   🎮 To play the game click <a  href="https://videogame-music-quiz-pablogarciadegregorio.vercel.app/">HERE<a> 🎮
 </h2>
 
+
+
 <br>
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/4094bcd6-fbaa-4f9c-85fb-7792ba4da3ab">
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/e6ebcee7-c4d4-4347-bbc2-282c4064b9fb">
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/1b2b916a-fdbe-47f1-aaf2-550f7d48b622">
+<br>
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/47f55e02-d062-48a8-9f21-81f196003f52">
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/9741c59a-5717-40bd-86bb-50c60bb5ce17">
+<img height="300" src="https://github.com/pablogarciadegregorio/GamerGroove/assets/129775284/c354f017-4f3e-4c78-aa1f-0f84fb6c0860">
+
+<hr>
+
+<h2> ⌨️ Technologies </h2>
 
 <ul>
   <li>
